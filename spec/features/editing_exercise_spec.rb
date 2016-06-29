@@ -1,8 +1,10 @@
 require "rails_helper"
 
 RSpec.feature "Editing Exercises" do
+
   before do
-    @owner = User.create(email: "owner@example.com", password: "password")
+    @owner = User.create(first_name: "John", last_name: "Doe", email: "owner@example.com", password: "password")
+
     @owner_exer = @owner.exercises.create!(duration_in_min: 45,
       workout: "Cardio Activity",
       workout_date: Date.today)
@@ -13,6 +15,7 @@ RSpec.feature "Editing Exercises" do
     visit "/"
     click_link "My Lounge"
     link = "a[href='/users/#{@owner.id}/exercises/#{@owner_exer.id}/edit']"
+
     find(link).click
     fill_in "Duration", with: 50
     click_button "Update Exercise"
@@ -22,3 +25,4 @@ RSpec.feature "Editing Exercises" do
     expect(page).not_to have_content(45)
   end
 end
+  
