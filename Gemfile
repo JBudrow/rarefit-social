@@ -11,6 +11,8 @@ gem 'bootstrap-sass'
 gem 'autoprefixer-rails'
 # Flexbile authentication solution for Rails with Warden
 gem 'devise'
+# jQuery UI for the Rails asset pipline
+gem 'jquery-ui-rails'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
