@@ -8,7 +8,7 @@ class User < ActiveRecord::Base
   validates :first_name, presence: true
   validates :last_name, presence: true
   has_many :friendships
-  has_many :friends, through: :friendships, class_name: "User"  
+  has_many :friends, through: :friendships, class_name: "User"
   self.per_page = 10
 
   def full_name
@@ -28,5 +28,9 @@ class User < ActiveRecord::Base
 
   def follows_or_same?(new_friend)
     friendships.map(&:friend).include?(new_friend) || self == new_friend
+  end
+
+  def current_friendship(friend)
+    friendships.where(friend: friend).first 
   end
 end
