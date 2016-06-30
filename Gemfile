@@ -13,6 +13,8 @@ gem 'autoprefixer-rails'
 gem 'devise'
 # jQuery UI for the Rails asset pipline
 gem 'jquery-ui-rails'
+# Pagination library for Rails, Sinatra, Merb, DataMapper, and more
+gem 'will_paginate-bootstrap'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
