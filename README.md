@@ -1,5 +1,4 @@
-[![Build Status](https://travis-ci.org/JBudrow.svg?branch=master)](https://travis-ci.org/JBudrow/rarefit-social)
-
+[![Build Status](https://travis-ci.org/JBudrow/rarefit-social.svg?branch=master)](https://travis-ci.org/JBudrow/rarefit-social)
 == README
 
 This README would normally document whatever steps are necessary to get the
