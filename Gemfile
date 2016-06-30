@@ -64,4 +64,6 @@ end
 group :test do
   # Acceptance test framework for web applications
   gem 'capybara'
+  # A make-like build utility for Ruby
+  gem 'rake'
 end

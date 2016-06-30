@@ -249,6 +249,7 @@ DEPENDENCIES
   jquery-rails
   jquery-ui-rails
   rails (= 4.2.6)
+  rake
   rspec-rails
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
