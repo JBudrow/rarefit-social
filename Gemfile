@@ -68,3 +68,6 @@ group :test do
   # A make-like build utility for Ruby
   gem 'rake'
 end
+
+# This gem enables serving assets in production and setting your logger to standard out, both of which are required to run a Rails 4 application on a twelve-factor provider.
+gem 'rails_12factor', group: :production
