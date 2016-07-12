@@ -18,8 +18,8 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: rarefit-test
+  database: rarefit
 
 production:
   <<: *default
-  database: rarefit-production
+  database: rarefit
