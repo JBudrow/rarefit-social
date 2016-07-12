@@ -3,10 +3,10 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.6'
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
 # Sass port of Bootstrap 2 and 3
 gem 'bootstrap-sass'
+# Ruby interface to the PosgreSQL RDBMS
+gem 'pg'
 # Tool to parse CSS and add vendor prefixes to CSS rules
 gem 'autoprefixer-rails'
 # Flexbile authentication solution for Rails with Warden
@@ -59,6 +59,7 @@ group :development do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+
 end
 
 group :test do

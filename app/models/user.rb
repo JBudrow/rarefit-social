@@ -31,6 +31,6 @@ class User < ActiveRecord::Base
   end
 
   def current_friendship(friend)
-    friendships.where(friend: friend).first 
+    friendships.where(friend: friend).first
   end
 end
